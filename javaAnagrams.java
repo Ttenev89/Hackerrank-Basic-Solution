@@ -15,11 +15,9 @@ public class javaAnagrams {
                 a[s1.charAt(i)] += 1;
                 b[s2.charAt(i)] += 1;
             }
-            for (int i = 0; i < 256; i++) {
+            for (int i = 0; i < 256; i++)
                 if (a[i] != b[i])
                     return false;
-
-            }
             return true;
         } else {
             return false;
